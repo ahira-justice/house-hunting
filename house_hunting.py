@@ -1,5 +1,12 @@
 def main():
-    pass
+    months = 0
+    annual_salary, portion_saved, total_cost = get_inputs()
+
+    r = 0.04
+    current_savings = 0
+
+    monthly_portion_saved = portion_saved * annual_salary / 12
+    portion_down_payment = 0.25 * total_cost
 
 
 def get_inputs():
