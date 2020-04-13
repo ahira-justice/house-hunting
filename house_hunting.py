@@ -9,5 +9,11 @@ def get_inputs():
 
     return int(annual_salary), float(portion_saved), int(total_cost)
 
+
+def display_output(value):
+    output = 'Number of months: {}'.format(str(value))
+    print(output)
+
+
 if __name__ == "__main__":
     main()
