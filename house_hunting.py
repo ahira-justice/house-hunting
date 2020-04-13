@@ -2,5 +2,12 @@ def main():
     pass
 
 
+def get_inputs():
+    annual_salary = input('Enter your annual salary: ')
+    portion_saved = input('Enter the percent of your salary to save as a decimal: ')
+    total_cost = input('Enter the cost of your dream home: ')
+
+    return int(annual_salary), float(portion_saved), int(total_cost)
+
 if __name__ == "__main__":
     main()
