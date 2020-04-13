@@ -7,7 +7,7 @@ def get_inputs():
     portion_saved = input('Enter the percent of your salary to save as a decimal: ')
     total_cost = input('Enter the cost of your dream home: ')
 
-    return int(annual_salary), float(portion_saved), int(total_cost)
+    return float(annual_salary), float(portion_saved), float(total_cost)
 
 
 def display_output(value):
