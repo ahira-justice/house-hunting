@@ -15,5 +15,9 @@ def display_output(value):
     print(output)
 
 
+def calculate_monthly_current_savings_return(value, percentage):
+    return value * percentage / 12
+
+
 if __name__ == "__main__":
     main()
