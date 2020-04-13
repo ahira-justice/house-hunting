@@ -8,6 +8,13 @@ def main():
     monthly_portion_saved = portion_saved * annual_salary / 12
     portion_down_payment = 0.25 * total_cost
 
+    while current_savings < portion_down_payment:
+        months += 1
+        monthly_current_savings_return = calculate_monthly_current_savings_return(current_savings, r)
+        current_savings = current_savings + monthly_portion_saved + monthly_current_savings_return
+
+    display_output(months)
+
 
 def get_inputs():
     annual_salary = input('Enter your annual salary: ')
